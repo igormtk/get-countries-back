@@ -25,6 +25,7 @@ npm run start
 The API will be available at: http://localhost:3000
 
 .env:
+PORT=8000
 BASE_URL_COUNTRY_NOW_API=https://api.countriesnow.space/v0.1
 BASE_URL_NAGER_API = 'https://date.nager.at/api/v3'
 ```

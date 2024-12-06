@@ -35,11 +35,9 @@ export class CountryService {
 
       const flag = flagData.find((country) => country.iso2 === countryCode);
 
-      const flagReturn = flag ? flag.flag : 'Flag data not found';
+      const flagReturn = flag ? flag.flag : null;
 
-      const populationReturn = population
-        ? population.populationCounts
-        : 'Population data not found';
+      const populationReturn = population ? population.populationCounts : null;
 
       return new CountryInfoDto(
         borders.countryName,

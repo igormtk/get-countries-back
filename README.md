@@ -45,8 +45,8 @@ BASE_URL_NAGER_API = 'https://date.nager.at/api/v3'
 
 - **/:countryCode**
 - Method: **GET**
-  - Parameters: **countryCode** (A 3-letter uppercase country code (e.g., "USA", "BRA")).
-- Description: Retrieves detailed information about a country using its 3-letter  ISO3 code. Information includes:
+  - Parameters: **countryCode** (A 2-letter uppercase country code (e.g., "US", "BR")).
+- Description: Retrieves detailed information about a country using its 2-letter  ISO2 code. Information includes:
   - Neighboring countries (borders)
   - Population data
   - Flag image

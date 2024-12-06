@@ -27,10 +27,10 @@ export class CountryController {
 
   @Get(':countryCode')
   async getCountryInfo(@Param('countryCode') countryCode: string) {
-    // Validate ISO3 format (3 uppercase letters)
-    if (!/^[A-Z]{3}$/.test(countryCode)) {
+    // Validate ISO2 format (2 uppercase letters)
+    if (!/^[A-Z]{2}$/.test(countryCode)) {
       throw new HttpException(
-        'Invalid country code format. Use ISO3 format (3 uppercase letters).',
+        'Invalid country code format. Use ISO2 format (2 uppercase letters).',
         HttpStatus.BAD_REQUEST,
       );
     }
